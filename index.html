@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ankara Bilim University — International Student Support</title>
+  <meta name="description" content="Digital support portal project for international students at Ankara Bilim University (ABU) — visa guidance, housing, campus map, emergency contacts, academic support." />
+  <style>
+    :root{
+      --primary:#1b4f72;
+      --accent:#f0b775;
+      --muted:#f2f5f7;
+      --card:#ffffff;
+      --dark:#0f2a3a;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, 'Segoe UI', Arial, sans-serif;margin:0;background:var(--muted);color:var(--dark);line-height:1.5}
+    header{background:linear-gradient(90deg,var(--primary),#2a6f9e);color:white;padding:28px 16px;text-align:center}
+    .logo{font-weight:700;letter-spacing:0.6px;font-size:20px}
+    nav{margin-top:12px}
+    nav a{color:#ffe8c9;text-decoration:none;margin:0 10px;padding:6px 10px;border-radius:6px;font-weight:600}
+    nav a:hover{background:rgba(255,255,255,0.08)}
+    .hero{background:linear-gradient(180deg,#eaf6ff,white);padding:48px 16px;text-align:center;border-bottom:4px solid rgba(27,79,114,0.12)}
+    .hero h1{margin:0;font-size:30px;color:var(--dark)}
+    .hero p{margin:12px 0 0;color:#2f4f5f}
+    .container{width:90%;max-width:1100px;margin:28px auto}
+    .card{background:var(--card);padding:20px;border-radius:10px;box-shadow:0 8px 20px rgba(15,42,58,0.06);margin-bottom:18px}
+    h2{color:var(--primary);margin-top:0}
+    ul{padding-left:18px}
+    li{margin:10px 0}
+
+    /* icons (emoji) style */
+    .item-icon{display:inline-block;width:30px;text-align:center;margin-right:10px}
+
+    /* responsive columns */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+
+    /* contact form */
+    form .row{display:flex;flex-direction:column;gap:8px}
+    input,textarea,select{padding:10px;border-radius:6px;border:1px solid #d9e6ef;background:#fbfeff}
+    button{background:var(--primary);color:white;border:none;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:600}
+    button:hover{background:#145a7f}
+
+    footer{background:var(--primary);color:white;padding:16px;text-align:center;margin-top:28px}
+
+    /* small helpers */
+    .muted{color:#6b7f89;font-size:14px}
+    .badge{display:inline-block;background:var(--accent);color:#3b2b15;padding:6px 10px;border-radius:999px;font-weight:700}
+
+    @media (max-width:600px){header{padding:20px}.hero{padding:28px}.logo{font-size:18px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Ankara Bilim University — International Support</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About ABU</a>
+      <a href="#international">International Office</a>
+      <a href="#visa">Visa Guide</a>
+      <a href="#housing">Housing</a>
+      <a href="#map">Campus Map</a>
+      <a href="#emergency">Emergency</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Welcome — Practical support for international students at Ankara Bilim University (ABU)</h1>
+      <p class="muted">Centralized guide: admissions, residency, housing, campus navigation, health and emergency contacts — designed as a course project for Project Management.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="card">
+      <h2>Latest Announcements <span class="badge">Orientation</span></h2>
+      <ul>
+        <li><span class="item-icon">📅</span> Orientation week schedule published — check Student Affairs.</li>
+        <li><span class="item-icon">🗂️</span> New international student welcome pack available for download.</li>
+        <li><span class="item-icon">🏠</span> Limited campus housing available — apply early.</li>
+      </ul>
+    </section>
+
+    <section id="about" class="card">
+      <h2>About Ankara Bilim University</h2>
+      <p><strong>Ankara Bilim University (ABU)</strong> is a modern private university in Ankara offering programs in engineering, social sciences, health sciences, and more. ABU welcomes international students and provides services through the International Office.</p>
+      <div class="grid">
+        <div>
+          <h3>Faculties & Programs</h3>
+          <ul>
+            <li>Engineering (Electrical, Mechanical, Computer)</li>
+            <li>Business & Economics</li>
+            <li>Health Sciences</li>
+            <li>Humanities & Social Sciences</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Quick Facts</h3>
+          <ul>
+            <li>Established: 2018 (example)</li>
+            <li>Campus: Central Ankara</li>
+            <li>Student population: ~6,000 (mixed)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="international" class="card">
+      <h2>International Office</h2>
+      <p>The International Office supports incoming students with admissions, orientation, and residence permit procedures.</p>
+      <div class="grid">
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><span class="item-icon">🛂</span> Pre-arrival guidance (visa paperwork tips)</li>
+            <li><span class="item-icon">🧾</span> Document verification and enrollment assistance</li>
+            <li><span class="item-icon">🤝</span> Buddy program & social activities</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Office Hours</h3>
+          <p class="muted">Mon–Fri: 09:00–17:00 (by appointment)</p>
+          <p><strong>Email:</strong> international@abilim.edu.tr (sample)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="visa" class="card">
+      <h2>Visa & Residence Permit Guide</h2>
+      <p>Short practical steps for international students coming to Turkey.</p>
+      <ol>
+        <li>Apply for a student visa at the nearest Turkish consulate. Prepare acceptance letter, passport, financial proof, and health insurance.</li>
+        <li>On arrival, register your address and complete the residence permit application via e-ikamet (e-government) within the first 30 days.</li>
+        <li>Keep copies of all documents and attend the International Office for support.</li>
+      </ol>
+      <p class="muted">Downloadable checklist: Passport copy, University acceptance letter, Passport photos, Proof of accommodation, Health insurance, Financial proof.</p>
+    </section>
+
+    <section id="housing" class="card">
+      <h2>Housing & Accommodation</h2>
+      <p>Housing options close to ABU: university dormitories, private flats, and shared apartments.</p>
+      <div class="grid">
+        <div>
+          <h3>Campus Dormitories</h3>
+          <p>On-campus rooms with basic furnishings. Apply early as space is limited.</p>
+        </div>
+        <div>
+          <h3>Private Housing</h3>
+          <p>Shared apartments are common. Use the university noticeboard and verified listings.</p>
+        </div>
+        <div>
+          <h3>Tips for Renting</h3>
+          <ul>
+            <li>Inspect the property in person</li>
+            <li>Ask about bills and deposit</li>
+            <li>Consider proximity to campus and transport</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="map" class="card">
+      <h2>Campus Map & Facilities</h2>
+      <p>Simple campus orientation — main departments, library, student affairs, cafeterias.</p>
+      <ul>
+        <li><span class="item-icon">📍</span>Main Academic Block (Engineering & Sciences)</li>
+        <li><span class="item-icon">📍</span>Library & Learning Center</li>
+        <li><span class="item-icon">📍</span>Student Affairs Office</li>
+        <li><span class="item-icon">📍</span>Health Centre & Counselling</li>
+      </ul>
+      <p class="muted">(For the project, include a simple printable campus map PDF as a deliverable.)</p>
+    </section>
+
+    <section id="emergency" class="card">
+      <h2>Emergency Contacts & Health Services</h2>
+      <p>Important numbers and services for safety and urgent help.</p>
+      <ul>
+        <li><strong>Police:</strong> 155</li>
+        <li><strong>Ambulance:</strong> 112</li>
+        <li><strong>Fire:</strong> 110</li>
+        <li><strong>Campus Security:</strong> +90 312 000 0000 (sample)</li>
+        <li><strong>Mental Health Hotline:</strong> +90 312 000 0001 (sample)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact & Feedback</h2>
+      <p>Please use the form below to send questions or feedback to the International Office (sample form — no JS).</p>
+      <form class="form-box" method="post" action="#">
+        <div class="row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required>
+        </div>
+        <div class="row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required>
+        </div>
+        <div class="row">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option>Visa</option>
+            <option>Housing</option>
+            <option>Enrollment</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Project Notes (for the course)</h2>
+      <p class="muted">This website is a Project Management course deliverable. Key artifacts to include in the submission:</p>
+      <ul>
+        <li>Project Charter & Scope</li>
+        <li>Work Breakdown Structure (WBS)</li>
+        <li>Gantt chart (timeline)</li>
+        <li>Risk register (privacy, participation, hosting)</li>
+        <li>Survey instrument and prototype usability results</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    
+    <p>Ankara Bilim University — International Student Support · © 2025</p>
+    <p>Prepared by <strong>Khadija, Mustaham and mohamed</strong></p>
+    <p>Instructor: <strong>Dr. Pelin KALKAN</strong></p>
+  </footer>
+</body>
+</html>
